@@ -8,7 +8,6 @@ Welcome to my portfolio! I'm Joshua, a U.S. Army Airborne Infantryman turned Com
 
 - [Projects](#projects)
 - [Skills](#skills)
-- [About Me](#about-me)
 - [Contact](#contact)
 - [Resume/CV](#resumecv)
 
@@ -56,11 +55,6 @@ An excerise in trying to understand computer graphics using Javascript.
 - Java
 - Android
 - Bash
-
-
-## About Me
-
-I'm a dedicated and enthusiastic web developer, passionate about creating user-friendly and visually appealing web applications. With a background in computer science and several years of professional experience, I enjoy tackling new challenges and continuously learning.
 
 ## Contact
 
