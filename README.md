@@ -22,7 +22,7 @@ A custom neural network to classify wearable IMU data as medical procedures and 
 ![Image Alt Text](https://github.com/Gonzo-CSUMB/Portfolio/blob/main/Medical%20Procedures%20Dectection/Final_Capstone_Poster%20.png)
 [Source Code](https://github.com/Gonzo-CSUMB/Portfolio/tree/main/Medical%20Procedures%20Dectection)
 
-### Project 2: Blogging Platform
+### Project 2: Pet Adoption Prediction
 
 A full-stack blogging platform built with Node.js, Express, and MongoDB. Users can create, edit, and delete blog posts.
 
