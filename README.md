@@ -11,7 +11,6 @@ Welcome to my portfolio! I'm Joshua, a U.S. Army Airborne Infantryman turned Com
 - [About Me](#about-me)
 - [Contact](#contact)
 - [Resume/CV](#resumecv)
-- [License](#license)
 
 ## Projects
 
@@ -24,27 +23,40 @@ A custom neural network to classify wearable IMU data as medical procedures and 
 
 ### Project 2: Pet Adoption Prediction
 
-A full-stack blogging platform built with Node.js, Express, and MongoDB. Users can create, edit, and delete blog posts.
+Data Analysis- Animals shelters in Bloomington, IN has documented all the interactions that happen withing their facilites and are recorded in the raw dataset below. This report attempts to figure out what all factors that can influence or determine if a cat or dog gets adopted or not. It attempts to draw meaningful correlations between these predictor variables and the various targeted outcome of successful adoption.
 
-[Live Demo](https://john-doe-blog.herokuapp.com)
-[Source Code](https://github.com/john-doe/blogging-platform)
+![Live Demo](https://github.com/Gonzo-CSUMB/Portfolio/blob/main/outputConfusionMatrix.png)
+[Source Code](https://github.com/Gonzo-CSUMB/Portfolio/tree/main/Pet%20Adopton%20Prediction)
 
-### Project 3: E-commerce Store
+### Project 3: 'The Bizaar' Android App
 
-An e-commerce web application powered by React, Redux, and Firebase. Users can browse products, add them to the cart, and place orders.
+A fake e-commerce Andriod app created for educational purposes, written in Java. The includes 16 different use cases including sign-in, add to cart, admin-mode, rating item oddness, etc.
 
-[Live Demo](https://john-doe-shop.netlify.app)
-[Source Code](https://github.com/john-doe/e-commerce-store)
+<img src="https://github.com/Gonzo-CSUMB/Portfolio/blob/main/usecase15_RateItemOddness.gif" alt="Image" width="300" />
+
+[Source Code](https://github.com/Gonzo-CSUMB/Portfolio/tree/main/The%20Bizaar)
+
+### Project 4: Web GL Ray Tracer
+<img src="https://github.com/Gonzo-CSUMB/Portfolio/blob/main/Screenshot%202023-08-06%20at%203.46.28%20PM.png" alt="Image" width="300" />
+An excerise in trying to understand computer graphics using Javascript.
+
+[Source Code](https://github.com/Gonzo-CSUMB/Portfolio/tree/main/ray_tracer)
 
 ## Skills
 
-- JavaScript (ES6+)
-- HTML5, CSS3
-- React.js, Redux
-- Node.js, Express
-- MongoDB, Firebase
+- Python
+- Tensorflow
+- Numpy
+- Matplotlib
+- Seaborn
+- JavaScript
+- HTML, CSS3
 - Git, GitHub
-- Responsive Web Design
+- C++
+- Java
+- Android
+- Bash
+
 
 ## About Me
 
@@ -52,12 +64,8 @@ I'm a dedicated and enthusiastic web developer, passionate about creating user-f
 
 ## Contact
 
-Feel free to reach out to me via email at john.doe@example.com or connect with me on [LinkedIn](https://www.linkedin.com/in/john-doe).
+Feel free to reach out to me via email at joshuaigonz@gmail.com or connect with me on [LinkedIn](https://www.linkedin.com/in/joshua-gonzales-b8433b209/).
 
 ## Resume/CV
 
-You can find my detailed resume [here](https://john-doe.github.io/resume).
-
-## License
-
-This portfolio is licensed under the MIT License. You can find the license details [here](LICENSE).
+You can find my detailed resume [here](https://github.com/Gonzo-CSUMB/Portfolio/blob/main/JoshuaGonzalesResume08-06.pdf).
