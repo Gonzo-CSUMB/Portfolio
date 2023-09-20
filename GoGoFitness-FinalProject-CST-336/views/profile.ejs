@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<%- include("partials/header") %>
+<%- include("partials/nav") %>
+<body>
+  <div class="container text-center">
+    <h2>Profile</h2>
+    <form method="POST" action="/profile">  
+
+    <div class="form-group row">
+      <label for="fname" class="col-sm-2 col-form-label">First name</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" name="fname" id="fname" placeholder="Enter first name" value="<%=userInfo[0].fname%>">
+      </div>
+    </div>
+    <br>
+
+    <div class="form-group row">
+      <label for="lname" class="col-sm-2 col-form-label">Last name</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" name="lname" id="lname" placeholder="Enter last name" value="<%=userInfo[0].lname%>">
+      </div>
+    </div>
+    <br>
+
+    <div class="form-group row">
+      <label for="age" class="col-sm-2 col-form-label">Age</label>
+      <div class="col-sm-10">
+        <input type="number" class="form-control" name="age" id="age" placeholder="Enter age" value="<%=userInfo[0].age%>">
+      </div>
+    </div>
+    <br>
+
+    <div class="form-group row">
+      <label for="height" class="col-sm-2 col-form-label">Height (inches)</label>
+      <div class="col-sm-10">
+        <input type="number" class="form-control" name="height" id="height" placeholder="Enter height in inches" value="<%=userInfo[0].height%>">
+      </div>
+    </div>
+    <br>
+
+    <div class="form-group row">
+      <label for="weight" class="col-sm-2 col-form-label">Weight (lbs)</label>
+      <div class="col-sm-10">
+        <input type="number" class="form-control" name="weight" id="weight" placeholder="Enter weight in pounds" value="<%=userInfo[0].weight%>">
+      </div>
+    </div>
+    <br>
+
+      <br>
+      <h4>Enter password to update email or password:</h4>
+      
+      Email: <input type="email" name="email" id="email" value="<%=userInfo[0].email%>"> <br><br>
+      
+      Password: <input type="password" name="oldPWord" id="oldPWord"> <br><br>
+      
+      New password: <input type="password" name="newPWord" id="newPWord"> <br><br>
+
+      <button class="btn btn-warning"> Update Profile </button> <br>
+    </form> 
+  </div>
+  <%- include("partials/footer") %>  
+</body>
+</html>

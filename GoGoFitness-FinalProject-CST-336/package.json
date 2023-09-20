@@ -1,0 +1,21 @@
+{
+  "name": "gogofitness-finalproject-cst-336",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.20.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "express-session": "^1.17.2",
+    "json-concat": "^0.0.1",
+    "mysql": "^2.18.1",
+    "node-fetch": "^2.6.7"
+  }
+}

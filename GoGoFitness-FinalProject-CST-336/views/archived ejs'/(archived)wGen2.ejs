@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<%- include("partials/header") %>
+<%- include("partials/nav") %>
+<body>
+
+  <% for (let i = 0; i < dayCount; i++) { %>
+    <h1> <%= selDays[i] %> </h1>  
+  <% } %>
+</body>
+</html>

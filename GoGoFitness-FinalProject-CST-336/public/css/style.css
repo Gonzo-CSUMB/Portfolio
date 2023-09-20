@@ -1,0 +1,77 @@
+/* .center{ 
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  padding: 10px;
+}*/
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.rounded{
+  border-radius: 20px;
+}
+
+/* nav stuff */
+a:hover {
+  background-color: #ffc800;
+  border-radius: 20px;
+}
+
+/* logo stuff */
+#logo{
+  max-width: 1%;
+  max-height: 1%;
+}
+
+.img2{ 
+  size: 10%;
+  max-width: 10%;
+  max-height: 10%;
+  height: 10%;
+  width: 10%;
+  object-fit: contain;
+/*   background-size: 100px 100px; 
+  background-size: 100px;
+  background-size: 100px auto;*/
+}
+
+/* workout gen page stuff */
+#weekChecks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo-image{
+  width: 10%;
+  height: 10%;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: -6px;
+}
+
+.flexRow{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.flexRowWrap{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.flexColumn{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}

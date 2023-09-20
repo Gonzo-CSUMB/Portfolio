@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<%- include("partials/header") %>
+<%- include("partials/nav") %>
+<body>   
+  <form method='POST' action='/workoutGen'>
+    Which days would you like to workout?
+    <div id='weekChecks'>
+      <input type="checkbox" id="1" class="wkday" name="sun" value="Sun">
+      <label for="sun">&ensp;Sunday&emsp;</label>
+      <input type="checkbox" id="2" class="wkday" name="mon" value="Mon">
+      <label for="mon">&ensp;Monday&emsp;</label><br>
+      <input type="checkbox" id="3" class="wkday" name="tues" value="Tues">
+      <label for="tues">&ensp;Tuesday&emsp;</label><br>
+      <input type="checkbox" id="4" class="wkday" name="wed" value="Wednes">
+      <label for="wed">&ensp;Wednesday&emsp;</label><br>
+      <input type="checkbox" id="5" class="wkday" name="thurs" value="Thur">
+      <label for="thurs">&ensp;Thursday&emsp;</label><br>
+      <input type="checkbox" id="6" class="wkday" name="fri" value="Fri">
+      <label for="fri">&ensp;Friday&emsp;</label><br>
+      <input type="checkbox" id="7" class="wkday" name="sat" value="Satur">
+      <label for="sat">&ensp;Saturday&emsp;</label><br>
+    </div>
+    
+    <button>Explore Plans</button>
+  </form>
+  <%- include("partials/footer") %>
+</body>
+</html>

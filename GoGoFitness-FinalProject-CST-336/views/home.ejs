@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<%- include("partials/header") %>
+<%- include("partials/nav") %>
+<body>
+
+  <div class= "text-center">
+    <button class="btn btn-lg btn-warning center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+      Display Current Plan
+    </button>
+  </div>
+  <br>
+  <div style="min-height: 120px;">
+    <div class="collapse collapse-horizontal" id="collapseWidthExample">
+      <div class="container text-center">
+        <div class="row">    
+          
+          <div class="card card-body col-sm bg-secondary text-light" style="width: 18rem;">
+             <div class="card-header">
+                Monday
+             </div>
+            <% if(typeof monPlan != "undefined") {%> 
+              <% for (var i =0; i < monPlan.length;  i++ ) { %>
+                   <div class = "card" style="width: 18rem;">
+                    <img src="<%=monPlan[i].gifUrl%>" class="card-img-top rounded" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title"> <%=monPlan[i].name%> </h5> 
+                      <p class="card-text"> <%=monPlan[i].bodyPart%> <%=monPlan[i].equipment%> </p>
+                      <a href="#" onclick= "removeFromPlan(<%=monPlan[i].id%>,'monday')" class="btn btn-warning"> Remove Exercise From Plan</a>
+                    </div>
+                   </div>  
+              <% } %>
+            <% } %>
+          </div>  
+            
+          <div class="card card-body col-sm bg-secondary text-light" style="width: 18rem;">
+            <div class="card-header">
+                Tuesday
+            </div>
+            <% if(typeof tuesPlan != "undefined") {%> 
+              <% for (var i =0; i < tuesPlan.length;  i++ ) { %>
+                   
+                    <img src="<%=tuesPlan[i].gifUrl%>" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title"> <%=tuesPlan[i].name%> </h5> 
+                      <p class="card-text"> <%=tuesPlan[i].bodyPart%> <%=tuesPlan[i].equipment%> </p>
+                      <a href="#" onclick= "removeFromPlan(<%=tuesPlan[i].id%>,'tuesday')" class="btn btn-warning"> Remove Exercise From Plan</a>  
+                    </div> 
+              <% } %>
+            <% } %>
+          </div> 
+
+          <div class="card card-body col-sm bg-secondary text-light" style="width: 18rem;">
+            <div class="card-header">
+                Wednesday
+            </div>
+            <% if(typeof wedsPlan != "undefined") {%> 
+              <% for (var i =0; i < wedsPlan.length;  i++ ) { %>
+                  
+                    <img src="<%=wedsPlan[i].gifUrl%>" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title"> <%=wedsPlan[i].name%> </h5> 
+                      <p class="card-text"> <%=wedsPlan[i].bodyPart%> <%=wedsPlan[i].equipment%> </p>
+                      <a href="#" onclick= "removeFromPlan(<%=wedsPlan[i].id%>,'wednesday')" class="btn btn-warning"> Remove Exercise From Plan</a>  
+                    </div> 
+              <% } %>
+            <% } %>
+          </div>
+
+          <div class="card card-body col-sm bg-secondary text-light" style="width: 18rem;">
+            <div class="card-header">
+                Thursday
+            </div>
+            <% if(typeof thursPlan != "undefined") {%> 
+              <% for (var i =0; i < thursPlan.length;  i++ ) { %>
+                  
+                    <img src="<%=thursPlan[i].gifUrl%>" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title"> <%=thursPlan[i].name%> </h5> 
+                      <p class="card-text"> <%=thursPlan[i].bodyPart%> <%=thursPlan[i].equipment%> </p>
+                      <a href="#" onclick= "removeFromPlan(<%=thursPlan[i].id%>,'thursday')" class="btn btn-warning"> Remove Exercise From Plan</a>  
+                    </div> 
+              <% } %>
+            <% } %>
+          </div>
+
+           <div class="card card-body col-sm bg-secondary text-light" style="width: 18rem;">
+            <div class="card-header">
+                Friday
+            </div>
+            <% if(typeof friPlan != "undefined") {%> 
+              <% for (var i =0; i < friPlan.length;  i++ ) { %>
+                  
+                    <img src="<%=friPlan[i].gifUrl%>" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title"> <%=friPlan[i].name%> </h5> 
+                      <p class="card-text"> <%=friPlan[i].bodyPart%> <%=friPlan[i].equipment%> </p>
+                      <a href="#" onclick= "removeFromPlan(<%=friPlan[i].id%>,'friday')" class="btn btn-warning"> Remove Exercise From Plan</a>  
+                    </div> 
+              <% } %>
+            <% } %>
+          </div>
+
+          <div class="card card-body col-sm bg-secondary text-light" style="width: 18rem;">
+            <div class="card-header">
+                Saturday
+            </div>
+            <% if(typeof satPlan != "undefined") {%> 
+              <% for (var i =0; i < satPlan.length;  i++ ) { %>
+                  
+                    <img src="<%=satPlan[i].gifUrl%>" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title"> <%=satPlan[i].name%> </h5> 
+                      <p class="card-text"> <%=satPlan[i].bodyPart%> <%=satPlan[i].equipment%> </p>
+                      <a href="#" onclick= "removeFromPlan(<%=satPlan[i].id%>,'saturday')" class="btn btn-warning"> Remove Exercise From Plan</a>  
+                    </div> 
+              <% } %>
+            <% } %>
+          </div>
+
+          <div class="card card-body col-sm bg-secondary text-light" style="width: 18rem;">
+            <div class="card-header">
+                Sunday
+            </div>
+            <% if(typeof sunPlan != "undefined") {%> 
+              <% for (var i =0; i < sunPlan.length;  i++ ) { %>
+                  
+                    <img src="<%=sunPlan[i].gifUrl%>" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title"> <%=sunPlan[i].name%> </h5> 
+                      <p class="card-text"> <%=sunPlan[i].bodyPart%> <%=sunPlan[i].equipment%> </p>
+                      <a href="#" onclick= "removeFromPlan(<%=sunPlan[i].id%>,'sunday')" class="btn btn-warning"> Remove Exercise From Plan</a>  
+                    </div> 
+              <% } %>
+            <% } %>
+          </div>
+              
+         
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <%- include("partials/footer") %>
+</body>
+</html>

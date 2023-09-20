@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<%- include("partials/header") %>
+<%- include("partials/nav") %>
+<body>
+  <div class="card center  bg-secondary">
+        <div class="card-header">
+         <h5 class="card-title text-center text-light text-center">Nutrition: </h5>
+        </div>
+        <div class="card-body text-light">
+          <form method="POST" name="userProtein" action="/nutrition" >
+            <h2> Select Desired Protein Intake</h2>
+              <input class="form-check-input" type="radio" name="proteinChoice" value=25> 25g Protein
+              <input class="form-check-input" type="radio" name="proteinChoice" value=50> 50g Protein
+              <input class="form-check-input" type="radio" name="proteinChoice" value=75> 75g Protein
+              <input class="form-check-input" type="radio" name="proteinChoice" value=100> 100g Protein
+            <br>
+            <button class= "btn btn-warning"> Submit </button>
+        
+          </form>
+        
+           <% if(typeof nutrition != "undefined") {%> 
+            <div> 
+              <% for (let i = 0; i < 5; i++){ %>
+                <hr>
+                <h3><%= nutrition.results[i].title %></h3>
+                  <br><br>
+                <img src= '<%= nutrition.results[i].image %>'>
+                <br>
+              <% } %> 
+            </div>
+          <% } %> 
+    </div>
+  <%- include("partials/footer") %>
+</body>
+</html>

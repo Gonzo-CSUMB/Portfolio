@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<%- include("partials/header") %>
+<%- include("partials/nav") %>
+<body>
+  <form method='POST' action="/wGen2">
+    <% if(typeof dataExercise == "undefined"){%>
+      <div class='flexColumn' >
+        <div class="card center bg-secondary">
+          <br>
+          <h1 class="card-title text-center text-light text-center"><b>Select a body part for each workout</b></h1><hr>
+            <div class="card-body">
+              <% for (let i=0; i<wCount; i++) { %>
+                <h3 class="card-subtitle text-light"> Workout #<%= i + 1 %> </h3><br>
+                <select class="form-select form-select-lg" name="bodypart<%= i %>">
+                <% for(let x = 0; x < bodyparts.length; x++) { %>
+                  <option value="<%= bodyparts[x] %>"> <%= bodyparts[x] %> </option>
+                <% } %>
+                </select>
+                <br><hr>
+              <% } %>
+              <button class="btn btn-warning">Continue</button>
+            </div>
+        </div>
+      </div>
+    <% } %>
+  </form>
+      
+  <% if(typeof dataExercise != "undefined"){%>
+    <div class="container text-center center">
+      <div class="row" id="workouts">
+        <div class="card-header">
+          <h1 class="card-title text-dark"> Random Workouts </h1>
+        </div>
+        <% for (var i =0; i < dataExercise.length;  i++ ) { %>
+          <div class="card card-body col-sm bg-secondary text-light" style="width: 18rem;">
+            <img src="<%=dataExercise[i].gifUrl%>" class="card-img-top img-adjusted" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"> <%=dataExercise[i].name%> </h5> 
+              <p class="card-text"> <%=dataExercise[i].bodyPart%> <%=dataExercise[i].equipment%> </p>
+              <a href="#" onclick= "addFromGen(<%=dataExercise[i].id%>,'<%= day%>')" class="btn btn-warning"> Add Exercises To Plan</a>
+              <hr>
+            </div>
+          </div>
+        <% } %>
+        <button type='submit' onclick='refreshPage()' class="btn btn-warning"> Get new set </button>  
+      </div>
+    </div> 
+  <% } %>
+    
+  <%- include("partials/footer") %>
+</body>
+</html>
